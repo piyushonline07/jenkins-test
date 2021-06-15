@@ -10,6 +10,7 @@ public class Controller {
 	
 	@GetMapping("/getUserName")
 	public ResponseEntity<String> getUserName() {
+		System.out.println("called");
 		return new ResponseEntity<String>("abhinav",HttpStatus.OK);
 	}
 }
