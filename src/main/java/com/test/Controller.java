@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
 	
 	@GetMapping("/getUserName")
-	public ResponseEntity<String> getUserName() {
+	public  getUserName() {
 		System.out.println("called");
 		return new ResponseEntity<String>("abhinav",HttpStatus.OK);
 	}
